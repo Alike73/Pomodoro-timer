@@ -105,6 +105,7 @@ class PomodoroTimer extends Component {
         return (
         <div className="px-4 py-5 my-5 text-center">
             <div className="container">
+            {/* Check if the countdown has ended, then play the audio */}
             {hasEnded && (
                 <div>
                 <audio src={myAudio} autoPlay />
